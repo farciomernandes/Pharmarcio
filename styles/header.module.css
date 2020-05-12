@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .iconArea {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.header .iconArea img {
+    width: 115px;
+}
+
+.header .iconArea .titleArea h1 {
+   font-size: 24px;
+   font-weight: 200;
+   text-transform: uppercase;
+}
+
+.header .iconArea .titleArea h2 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 2px;
+}
+
+.header .searchArea {
+    margin-top: 20px;
+    margin-left: 5%;
+    position: relative;
+}
+
+.header .searchArea input {
+    width: 450px;
+    height: 30px;
+    border: 2px solid #60A3BC;
+    text-indent: 10px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.header .searchArea .searchButton {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.header .list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 15px 45px;
+}
+
+.header .list li {
+    cursor: pointer;
+}
