@@ -18,7 +18,7 @@
 
 .header .iconArea .titleArea h1 {
    font-size: 24px;
-   font-weight: 200;
+   font-weight: 300;
    text-transform: uppercase;
 }
 
@@ -26,6 +26,7 @@
     font-size: 18px;
     font-weight: 100;
     margin-top: 2px;
+    font-weight: 299;
 }
 
 .header .searchArea {
