@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from './Footer';
 
 export default function Layout({ children }) {
     return (
@@ -21,7 +22,7 @@ export default function Layout({ children }) {
                     {children}
                 </article>
 
-                { /* Componente Footer aqui */ }
+                <Footer />
             </section>
         </div>
     )
