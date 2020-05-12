@@ -1,10 +1,8 @@
 import styles from '../styles/utils.module.css'
 
-export default function Footer(){
-    
-
+export default function Footer() {
     return(
-        <div className={styles.backRed} >
+        <footer className={styles.backRed} >
             <div className={styles.redes}>
                 <section>
                 <img src="/email.png"   alt="email"/>
@@ -22,6 +20,6 @@ export default function Footer(){
             <div className={styles.copy}>
                 <p>Copyright ©2020 All rights reserved | This template is made with  by <a href="https://github.com/farciomernandes"> Marcio </a>  and <a href="https://github.com/MickaelAraujs"> Mickael </a></p>
             </div>
-        </div>
+        </footer>
     );
 }
