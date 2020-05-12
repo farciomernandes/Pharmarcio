@@ -1,8 +1,6 @@
 /* Estilos compartilhados entre mais de um componente */
-.backRed{
-    position: absolute;
-    width: 100vw;
-    bottom: 0px;
+
+.backRed {
     background-color: #610F0F;
     display: block;
     justify-content: center;
@@ -18,7 +16,6 @@
     align-items: center;
     text-align: center;
     font-size: 16px;
-    width: 95vw;
     margin-top: 10px;
 }
 .redes img{
@@ -30,7 +27,6 @@
     margin-top: 1%;
     text-align: center;
     font-size: 14px;
-    width: 100vw;
     margin-top: 30px;
 }
 .copy a {
@@ -41,4 +37,80 @@
 
 .copy a:hover {
     text-decoration: underline;
+}
+
+.goBack {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.goBack a {
+    color: #000000;
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.productGrid {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 75px;
+}
+
+.productGrid .productCard {
+    padding: 10px;
+    max-width: 275px;
+    background-color: #FAFAFA;
+    box-shadow: 1px 2px 5px #000000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productGrid .productCard img {
+    width: 150px;
+}
+
+.productGrid .productCard .productCardInfo {
+    margin-top: 10px;
+}
+
+.productGrid .productCard .productCardInfo span {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #11D100;
+}
+
+.productGrid .productCard .productCardInfo p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.productGrid .productCard button {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #60A3BC;
+    height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.productGrid .productCard button * {
+    margin-right: 5px;
 }
