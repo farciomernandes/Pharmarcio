@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-
 .blackBlue{
     background-color: #4A69BD;
     width: 100%;
@@ -21,6 +20,7 @@
     height: 40vh;
     margin-top: 4%;
     margin-bottom: 4%;
+    padding: 10px 0;
 }
 .ofertText{
     flex-wrap: wrap;
@@ -37,17 +37,18 @@
     width: 100%;
     height: 80%;
 }
+
+.slids .arrow {
+    cursor: pointer;
+}
+
 .slids img{
     flex-wrap: wrap;
     height: 12em;
     width: 23em;
+    cursor: pointer;
 }
-.arrowIcon{
-    flex-wrap: wrap;
-    height: 3.5em !important;
-    width: 3.5em !important;
 
-}
 .slids a:hover{
     flex-wrap: wrap;
     -webkit-transform: scale(1.1);
@@ -66,7 +67,8 @@
 }
 .typeProducts section{
     flex-wrap: wrap;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -76,8 +78,8 @@
     flex-wrap: wrap;
     height: 10em;
     width: 15em;
-
 }
+
 .btnVer{
     border-radius: 27px;
     border: 1px solid rgb(76, 100, 167);
@@ -93,10 +95,10 @@
     width: 100px;
     margin-top: 3%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 .formMail{
     margin-top: 5%;
-    height: 30vh;
     display: flex;
     width: 98vw;
     text-align: center;
@@ -112,10 +114,17 @@
 .formForm input{
     width: 100%;
     margin-bottom: 4%;
+    height: 30px;
+    text-indent: 5px;
+    vertical-align: top;
+    border: 2px solid #60A3BC;
 }
 .formForm textarea{
     width: 100%;
-    height: 80px;
+    height: 175px;
+    text-indent: 5px;
+    border: 2px solid #60A3BC;
+    resize: none;
 }
 
 .message{
