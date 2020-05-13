@@ -1,0 +1,52 @@
+.allPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.center{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #E6E6FA;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.center p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1.3em;
+}
+.center h2{
+    position: relative;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: 2em;
+}
+.produto{
+    width: 80vw;
+}
+.produto h2{
+    position: relative;
+    text-align: end;
+}
+.total{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: baseline;
+    margin-bottom: 1%;
+}
+.total h3{
+    margin-right: 5%;
+    margin-left: 3%;
+    background-color: #808080;
+    font-weight: 500;
+    font-size: 2.4em;
+}
+.total h2{
+    font-weight: 600;
+    font-size: 2em;
+}
