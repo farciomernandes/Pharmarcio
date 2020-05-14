@@ -8,6 +8,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 .whiteBlue{
     flex-wrap: wrap;

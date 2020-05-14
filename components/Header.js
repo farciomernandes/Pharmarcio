@@ -25,19 +25,29 @@ export default function Header() {
 
             <ul className={styles.list}>
                 <li>
-                    Medicamentos e Saúde
+                    <Link href='/products'>
+                        <a>Medicamentos e Saúde</a>
+                    </Link>
                 </li>
                 <li>
-                    Beleza e Higiene
+                    <Link href='/products'>
+                        <a>Beleza e Higiene</a>
+                    </Link>
                 </li>
                 <li>
-                    Nutrição e Bem Estar
+                    <Link href='/products'>
+                        <a>Nutrição e Bem Estar</a>
+                    </Link>
                 </li>
                 <li>
-                    Mais Vendidos
+                    <Link href='/products'>
+                        <a>Mais Vendidos</a>
+                    </Link>
                 </li>
                 <li>
-                    Promoções
+                    <Link href='/products'>
+                        <a>Promoções</a>
+                    </Link>
                 </li>
             </ul>
         </header>
