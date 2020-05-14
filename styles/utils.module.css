@@ -2,27 +2,30 @@
 
 .backRed {
     background-color: #610F0F;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     padding: 10px 0;
 }
-.redes{
+
+.redes {
     color: #000000;
-    height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
-.redes img{
+
+.redes img {
     width: 50px;
     height: 50px;
 }
-.copy{
+.copy {
     color: white;
     margin-top: 1%;
     text-align: center;
@@ -128,4 +131,22 @@
 
 .buy:hover {
     background-color: #0260E8;
+}
+
+
+@media (max-width: 425px) {
+    .redes {
+       flex-direction: column;
+    }
+
+    .redes img {
+        margin-top: 20px;
+    }
+
+    .productGrid {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+    }
 }
