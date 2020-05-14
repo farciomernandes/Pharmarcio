@@ -17,15 +17,15 @@ export default function Home() {
               <MdKeyboardArrowLeft className={styles.arrow} color="#000000" size={120} />
             </a>
 
-            <a>
+            <a href="/Products">
               <img src="/images/asma.png"/>
             </a>
                     
-            <a>
+            <a href="/Products">
               <img src="images/rivotril.png"/>
             </a>
             
-            <a>
+            <a href="/Products">
               <img src="images/suplemento.png"/>
             </a>
 
