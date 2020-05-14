@@ -50,6 +50,29 @@
     cursor: pointer;
 }
 
+@media (max-width: 1341px) 
+{
+  .slids img, .arrow{
+      height: 90%;
+      width: 19%;
+      cursor: pointer;
+  } 
+  .slids img{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .slids{
+      display: inline-block;
+    }
+    .blackBlue{
+        height: 30vh;
+    }
+    .whiteBlue{
+        height: 20vh;
+    }
+}
+
+
 .slids a:hover{
     flex-wrap: wrap;
     -webkit-transform: scale(1.1);
