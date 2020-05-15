@@ -14,7 +14,7 @@ export default function Home() {
 
           <div className={styles.slids}>
 
-            <a>
+            <a href="/products">
               <MdKeyboardArrowLeft className={styles.arrow} color="#000000" size={75} />
             </a>
 
