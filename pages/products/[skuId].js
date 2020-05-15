@@ -23,8 +23,9 @@ export default function Product({ sku }) {
                     <h3>{sku.attributes.name}</h3>
                     
                     <p>
-                        O clonazepam pertence a uma classe farmacológica conhecida como benzodiazepinas,
-                        que possuem como principais propriedades...   
+                        Nossos produtos são retirados diretamente dos melhores laboratórios do Brasil
+                        e do mundo, o que nos permite a entregar a nossos clientes produtos de alta qualidade
+                        com o melhor valor do mercado.
                     </p>
 
                     <span>

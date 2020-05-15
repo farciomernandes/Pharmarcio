@@ -37,9 +37,9 @@ export default function Products({ skus  }) {
                             </span>
                             
                             <p>
-                               Todos os nossos médicamentos são revendidos apartir da importação feitas
-                               por métodos não convencionais. Nossos clientes receberam os produtos em dias,
-                               a forma de entrega? Nem nós sabemos...
+                            Nossos produtos são retirados diretamente dos melhores laboratórios do Brasil
+                            e do mundo, o que nos permite a entregar a nossos clientes produtos de alta qualidade
+                            com o melhor valor do mercado.
                             </p>
                         </div>
                         
