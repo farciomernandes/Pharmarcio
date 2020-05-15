@@ -57,7 +57,6 @@ export async function getStaticPaths() {
         };
     });
     
-    console.log('TOTAL: ', paths.length)
 
     return {
         paths,
@@ -71,7 +70,7 @@ export async function getStaticProps({ params }) {
     });
 
     const sku = await stripe.skus.retrieve(params.skuId);
-    console.log('SKU É:  ', sku)
+
     return {
         props: {
             sku

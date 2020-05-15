@@ -11,7 +11,9 @@
 }
 
 .container img {
-    width: 350px;
+    width: 24em;
+    height: 20em;
+    border-radius: 7px;
 }
 
 .container .productContent {
