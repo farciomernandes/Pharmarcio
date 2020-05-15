@@ -1,11 +1,27 @@
+import { useState } from 'react';
 import Link from 'next/link';
-import { MdSearch } from 'react-icons/md';
+import { MdSearch, MdMenu } from 'react-icons/md';
 
 import styles from '../styles/header.module.css';
 
 export default function Header() {
+    const [headerClass, setHeaderClass] = useState('');
+    const [listClass, setListClass] = useState(styles.list);
+
+    function handleClassChange() {
+        if (headerClass === '') {
+            setHeaderClass(styles.on);
+            setListClass(styles.hideList);
+        } else {
+            setHeaderClass('');
+            setListClass(styles.list);
+        }
+    }
+
     return (
         <header className={styles.header}>
+            <section className={headerClass}></section>
+
             <Link href="/">
                 <div className={styles.iconArea}>
                     <img src="/logo.svg" alt="Pharmarcio | Seus medicamentos a um clique!"/>
@@ -23,7 +39,11 @@ export default function Header() {
                 </button>
             </div>
 
-            <ul className={styles.list}>
+            <button onClick={handleClassChange} className={styles.responsiveMenu}>
+                <MdMenu color='#000000' size={30} />
+            </button>
+
+            <ul className={listClass}>
                 <li>
                     <Link href='/products'>
                         <a>Medicamentos e Saúde</a>

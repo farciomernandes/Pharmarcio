@@ -26,7 +26,6 @@
     font-size: 18px;
     font-weight: 100;
     margin-top: 2px;
-    font-weight: 299;
 }
 
 .header .searchArea {
@@ -53,6 +52,15 @@
     right: 5px;
 }
 
+.responsiveMenu {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    display: none;
+}
+
 .header .list {
     list-style: none;
     display: flex;
@@ -68,4 +76,87 @@
 .header .list li a {
     text-decoration: none;
     color: #000000;
+}
+
+
+@media (max-width: 425px) {
+    .header {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .on {
+        background-color: #60A3BC;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        margin-bottom: 300px;
+        animation: slide 0.3s forwards;
+    }
+
+    .header .iconArea img {
+        width: 75px;
+    }
+
+    .header .iconArea .titleArea h1 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+     .header .iconArea .titleArea h2 {
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+
+    .header .searchArea {
+        margin-left: 10px;
+    }
+
+    .header .searchArea input {
+        width: 80vw;
+    }
+
+    .header .list {
+        display: none;
+    }
+
+    .header .hideList {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 20;
+    }
+
+    .header .hideList li {
+        margin-top: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+        z-index: 20;
+    }
+
+    .header .hideList li a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .responsiveMenu {
+        display: block;
+        z-index: 20;
+    }
+
+    @keyframes slide {
+        from {
+            margin-left: -500px;
+        }
+
+        to {
+            margin-left: 0;
+        }
+    }
+    
 }

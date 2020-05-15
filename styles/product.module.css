@@ -1,5 +1,4 @@
 .container {
-    background-color: tomato;
     min-height: 60vh;
     width: 800px;
     margin: 30px auto;
@@ -39,5 +38,37 @@
     font-size: 2R5px;
     font-weight: bold;
     color: #11D100;
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 250px;
+        height: 250px;
+        margin-left: 30px;
+    }
+
+    .container .productContent {
+        margin-top: 15px;
+    }
+
+    .container .productContent h3 {
+        font-size: 25px;
+    }
+
+    .container .productContent p {
+        margin-top: 15px;
+    }
+
+    .container .productContent span {
+        margin-top: 15px;
+        text-align: right;
+        margin-right: 5px;
+    }
+    
 }
 

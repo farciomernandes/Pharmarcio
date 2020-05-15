@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 
 import Layout from '../components/layout';
@@ -14,23 +15,29 @@ export default function Home() {
           <div className={styles.slids}>
 
             <a>
-              <MdKeyboardArrowLeft className={styles.arrow} color="#000000" size={120} />
+              <MdKeyboardArrowLeft className={styles.arrow} color="#000000" size={75} />
             </a>
 
-            <a href="/Products">
-              <img src="/images/asma.png"/>
-            </a>
+            <Link href='/products'>
+              <a>
+                <img src="/images/asma.png"/>
+              </a>
+            </Link>
                     
-            <a href="/Products">
-              <img src="images/rivotril.png"/>
-            </a>
+            <Link href="/products">
+              <a>
+                <img src="images/rivotril.png"/>
+              </a>
+            </Link>
             
-            <a href="/Products">
-              <img src="images/suplemento.png"/>
-            </a>
+            <Link href="/products">
+              <a>
+                <img src="images/suplemento.png"/>
+              </a>
+            </Link>
 
             <a>
-              <MdKeyboardArrowRight className={styles.arrow} color="#000000" size={120} />
+              <MdKeyboardArrowRight className={styles.arrow} color="#000000" size={75} />
             </a>
                     
           </div>
@@ -40,27 +47,24 @@ export default function Home() {
       <section className={styles.typeProducts}>
         <section>            
           <h1>GENÉRICOS</h1>
-          <img src="/images/genericos.png" alt="genéricos"/>
-                
-          <br />
-          
-          <a href="#" className={styles.btnVer}>VER MAIS...</a>               
+
+          <img src="/images/genericos.png" alt="genéricos"/> 
+
+          <a className={styles.btnVer}>VER MAIS...</a>               
         </section>
         
         <section>            
           <h1>BELEZA E HIGIENE</h1>
+
           <img src="/images/beleza.png" alt="genéricos"/>
-                
-          <br />
-          
+
           <a className={styles.btnVer}>VER MAIS...</a>               
         </section>
                 
         <section>            
           <h1>MANIPULADOS</h1>
+
           <img src="/images/manipulados.png" alt="genéricos"/>
-                
-          <br />
           
           <a className={styles.btnVer}>VER MAIS...</a>               
         </section>
