@@ -43,7 +43,10 @@ export async function getStaticPaths() {
         apiVersion: '2020-03-02'
     });
 
-    const skus = await stripe.skus.list();
+    const skus = await stripe.skus.list(
+        {limit: 100}
+    );
+
 
     const paths = skus.data.map(sku => {
         return {
@@ -52,6 +55,8 @@ export async function getStaticPaths() {
             }
         };
     });
+    
+    console.log('TOTAL: ', paths.length)
 
     return {
         paths,
@@ -65,7 +70,7 @@ export async function getStaticProps({ params }) {
     });
 
     const sku = await stripe.skus.retrieve(params.skuId);
-
+    console.log('SKU É:  ', sku)
     return {
         props: {
             sku

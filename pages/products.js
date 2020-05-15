@@ -37,8 +37,9 @@ export default function Products({ skus }) {
                             </span>
                             
                             <p>
-                                O clonazepam pertence a uma classe farmacológica conhecida como
-                                benzodiazepinas, que possuem como principais propriedades...
+                               Todos os nossos médicamentos são revendidos apartir da importação feitas
+                               por métodos não convencionais. Nossos clientes receberam os produtos em dias,
+                               a forma de entrega? Nem nós sabemos...
                             </p>
                         </div>
                         
@@ -63,7 +64,9 @@ export async function getStaticProps() {
         apiVersion: '2020-03-02'
     });
 
-    const skus = await stripe.skus.list();
+    const skus = await stripe.skus.list(
+        {limit: 100}
+    );
 
     return {
         props: {
