@@ -12,7 +12,7 @@ import parsePriceAsBRL from '../utils/parsePriceAsBRL';
 
 import styles from '../styles/utils.module.css';
 
-export default function Products({ skus }) {
+export default function Products({ skus  }) {
     return (
         <Layout>
             <Head>
