@@ -1,0 +1,31 @@
+.carouselContainer {
+    display: flex;
+    width: 95vw;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.carouselContainer img {
+    margin-left: 15px;
+}
+
+.carouselContainer .button {
+    height: 35px;
+    border: none;
+    background: transparent;
+}
+
+.carouselContainer .slider {
+    width: 100%;
+}
+
+.carouselContainer .slider .slides {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
+    .carouselContainer .slider {
+        height: 85px;
+    }
+}
