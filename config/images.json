@@ -1,0 +1,61 @@
+[
+    [
+        {
+            "id": 1,
+            "name": "rivotril",
+            "image_url": "https://febract.org.br/portal/wp-content/uploads/2017/08/rivotril.jpg"
+        },
+    
+        {
+            "id": 2,
+            "name": "suplemento",
+            "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/72757/0/72757060_1GG.jpg"
+        },
+    
+        {
+            "id": 3,
+            "name": "benegrip",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/b/e/benegrip_20comps.jpg?width=520&height=520&quality=50&type=resize"
+        }
+    ],
+
+    [
+        {
+            "id": 4,
+            "name": "centrum",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/7/8/7891045040679_1.jpg?width=520&height=520&quality=85&type=resize"
+        },
+    
+        {
+            "id": 5,
+            "name": "Escova Colgate",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/e/s/escova_dental_colgate_slim_soft_black_3_unidades_8_.jpg?width=520&height=520&quality=85&type=resize"
+        },
+    
+        {
+            "id": 6,
+            "name": "Hytos",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/h/y/hytos_plus_xarope_100_ml_02.jpg?width=520&height=520&quality=85&type=resize"
+        }
+    ],
+
+    [
+        {
+            "id": 7,
+            "name": "Gillete",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/g/i/gillette_lmpm.jpg?width=520&height=520&quality=85&type=resize"
+        },
+    
+        {
+            "id": 8,
+            "name": "Lavittan",
+            "image_url": "https://img.drogaraia.com.br/catalog/product/v/a/varicell-phyto-20s_2_1_.jpg?width=520&height=520&quality=85&type=resize"
+        },
+    
+        {
+            "id": 9,
+            "name": "Bio C",
+            "image_url": "https://img.drogaraia.com.br/media/catalog/product/b/i/bio-c_1g_10_comprimidos_efervescentes.jpg?width=520&height=520&quality=80&type=resize"
+        }
+    ]
+]
