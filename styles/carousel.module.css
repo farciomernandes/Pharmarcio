@@ -1,6 +1,5 @@
 .carouselContainer {
     display: flex;
-    width: 95vw;
     justify-content: space-between; 
     align-items: center;
 }
@@ -17,6 +16,10 @@
 
 .carouselContainer .slider {
     width: 100%;
+}
+
+.carouselContainer .slider .sliderContent {
+    display: flex;
 }
 
 .carouselContainer .slider .slides {

@@ -65,7 +65,7 @@ export async function getStaticProps() {
     });
 
     const skus = await stripe.skus.list(
-        {limit: 100}
+        {limit: 20}
     );
 
     return {

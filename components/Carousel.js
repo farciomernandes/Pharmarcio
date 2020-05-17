@@ -5,72 +5,60 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import styles from '../styles/home.module.css';
 import CarouselStyles from '../styles/carousel.module.css';
 
+import items from '../config/images.json';
+
+const [ firsts, seconds, thirds ] = items;
+
 export default function Carousel() {
     return (
         <CarouselProvider
-        totalSlides={3}
+        totalSlides={items.length}
         naturalSlideWidth={100}
         naturalSlideHeight={15}
-        >
+        >  
             <div className={CarouselStyles.carouselContainer}>
                 <ButtonBack className={CarouselStyles.button}>
-                    <MdKeyboardArrowLeft color='#000000' size={80} className={styles.arrow} />
+                    <MdKeyboardArrowLeft color='#000000' size={60} className={styles.arrow} />
                 </ButtonBack>
 
                 <Slider className={CarouselStyles.slider}>
-                    <Slide index={0}>
-                        <div className={CarouselStyles.slides}>
-                            <Link href='/products'>
-                                <img src='/images/manipulados.png' />
-                            </Link>
+                    <div className={CarouselStyles.sliderContent}>
+                        { firsts.map((item, index) => (
+                            <Slide index={index} key={item.id}>
+                                <div className={CarouselStyles.slides}>
+                                    <Link href='/products'>
+                                        <img src={item.image_url} alt={item.name} />
+                                    </Link>
+                                </div>
+                            </Slide>
+                        )) }
 
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
+                        { seconds.map((item, index) => (
+                            <Slide index={index} key={item.id}>
+                                <div className={CarouselStyles.slides}>
+                                    <Link href='/products'>
+                                        <img src={item.image_url} alt={item.name} />
+                                    </Link>
+                                </div>
+                            </Slide>
+                        )) }
 
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
-                        </div>
-                    </Slide>
-
-                    <Slide index={1}>
-                        <div className={CarouselStyles.slides}>
-                            <Link href='/products'>
-                                <img src='/images/manipulados.png' />
-                            </Link>
-
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
-
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
-                        </div>
-                    </Slide>
-
-                    <Slide index={2}>
-                        <div className={CarouselStyles.slides}>
-                            <Link href='/products'>
-                                <img src='/images/manipulados.png' />
-                            </Link>
-
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
-
-                            <Link href='/products'>
-                                <img src='/images/asma.png' />
-                            </Link>
-                        </div>
-                    </Slide>
+                        { thirds.map((item, index) => (
+                            <Slide index={index} key={item.id}>
+                                <div className={CarouselStyles.slides}>
+                                    <Link href='/products'>
+                                        <img src={item.image_url} alt={item.name} />
+                                    </Link>
+                                </div>
+                            </Slide>
+                        )) }
+                    </div>
                 </Slider>
 
                 <ButtonNext className={CarouselStyles.button}>
-                    <MdKeyboardArrowRight color='#000000' size={80} className={styles.arrow}/>
+                    <MdKeyboardArrowRight color='#000000' size={60} className={styles.arrow}/>
                 </ButtonNext>
-            </div>
-        </CarouselProvider>
-    )
+            </div> 
+        </CarouselProvider> 
+    ) 
 }
