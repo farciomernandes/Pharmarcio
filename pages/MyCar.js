@@ -1,6 +1,4 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { MdShoppingCart } from 'react-icons/md';
+import CheckoutButton from '../components/CheckoutButton';
 
 import stripeConfig from '../config/stripe';
 import { Stripe } from 'stripe';
@@ -19,41 +17,54 @@ export function MyCar({skus}){
 
         <div>
         <section className={styles.MyCar}>
-                { skus.map(sku => (
-                    <div className={styles.itemms}>
-                    <div key={sku.id} >
-                        <h4 className={styles.titleMyCar}>
-                            {sku.attributes.name}
-                        </h4>
-                        <img height="100px" src={sku.image} alt={sku.attributes.name} />
+        <table className={styles.tableTable}>
 
-                        <div className={styles}>
+        <tr className={styles.tableTitle}>
+            <th>PRODUTO</th>
+            <th>NOME</th>
+            <th>PREÇO</th>
+            <th>UNIDADES</th>    
+        </tr>
+        <tr>
+            <td><hr /></td>
+            <td><hr /></td>
+            <td><hr /></td>
+        </tr>
+
+        {skus.map( sku=>(
+            <>
+
+        <tr>
+            <td>
+                <img className={styles.tableImg} 
+                src={sku.image} alt="genéricos"/>
+            </td>
+            <td className={styles.tableName}>
+                <p>{sku.attributes.name}</p>
+            </td>
+            <td className={styles.tablePrice}>
+            { parsePriceAsBRL(Number(sku.price/100)) }
+            </td>
+            <td className={styles.tableInput}>
+                <input type="Number" placeholder="1" />
+                <CheckoutButton className={styles.buttonBuy2} skuId={sku.id} />
+            </td>
             
-                            <span>
-                                { parsePriceAsBRL(Number(sku.price/100)) }
-                            </span>
-                            
-                            <p>
-                            </p>
-                        </div>
-                        
-                        <Link href='/products/[skuId]' as={`/products/${sku.id}`}>
-                            <button className={styles.buyCar}>
-                                <MdShoppingCart size={26} color="#ffffff" />
-                                comprar
-                            </button>
-                        </Link>
-                    </div>
-                    <div className={styles.qtd}>
-                        <p>Unidades</p>
-                        <input value="1" />
-                    </div>
-                    </div>
-                )) }
-            </section>   
-                <div className={styles.totall}>
-                    Total a ser pago: {total/100}
-                </div>
+        </tr>
+                <br className={styles.separa}/>
+            </>
+            ))}
+
+
+
+     
+      
+
+        </table>
+
+        
+        </section>   
+             
         </div>
         </Layout>
 
