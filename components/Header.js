@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { MdSearch, MdMenu } from 'react-icons/md';
 
+import Cart from '../components/Cart';
+
 import styles from '../styles/header.module.css';
 
 export default function Header() {
@@ -38,6 +40,8 @@ export default function Header() {
                     <MdSearch size={26} color="#000000" />
                 </button>
             </div>
+
+            <Cart />
 
             <button onClick={handleClassChange} className={styles.responsiveMenu}>
                 <MdMenu color='#000000' size={30} />

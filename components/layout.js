@@ -1,11 +1,13 @@
 import Head from 'next/head';
 
+import CartProvider from '../contexts/cart';
+
 import Header from './Header';
 import Footer from './Footer';
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <CartProvider>
             <Head>
                 <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,6 +28,6 @@ export default function Layout({ children }) {
 
                 <Footer />
             </section>
-        </div>
+        </CartProvider>
     )
 }
