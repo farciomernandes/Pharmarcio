@@ -50,16 +50,19 @@ export default function Home() {
           Alguma dica ou sugestão? Nos envie uma mensagem!
         </section>
                 
-        <form action="http://formspree.io/farciomernandes@gmail.com"
-              method="POST" className={styles.formForm}
+
+        <form action="mailto:farciomernandes@gmail.com"
+              method="get"
+              target="_blank"
+              className={styles.formForm}
         >
-          <input name="Name" placeholder="seu nome" />
+          <input name="Name" placeholder="Seu Nome" />
           
           <input name="Email" placeholder="email" />
           
-          <textarea name="Mensagem" placeholder="sua mensagem"/>
+          <textarea name="Mensagem" placeholder="Sua Mensagem"/>
           
-          <button type="submit" className={styles.btnVer}>Enviar</button>
+          <button  type="submit" value="click" className={styles.btnVer}>Enviar</button>
         </form>
       </section>
     </Layout>
