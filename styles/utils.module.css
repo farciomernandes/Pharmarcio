@@ -134,6 +134,26 @@
     background-color: #0260E8;
 }
 
+.cartContainer {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.cartContainer span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 25px;
+    background-color: #60A3BC;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
 
 @media (max-width: 425px) {
     .redes {
@@ -149,5 +169,22 @@
         align-items: center;
         justify-content: center;
         padding: 0 40px;
+    }
+
+    .cartContainer {
+        top: 10px;
+        right: 50px;
+    }
+    
+    .cartContainer span {
+        color: #fff;
+        font-weight: bold;
+        width: 25px;
+        background-color: #60A3BC;
+        position: absolute;
+        left: 25px;
+        top: -10px;
+        text-align: center;
+        border-radius: 25px;
     }
 }
