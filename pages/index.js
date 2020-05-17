@@ -1,11 +1,10 @@
-import Link from 'next/link';
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
-
 import Layout from '../components/layout';
+import Carousel from '../components/Carousel';
 
 import styles from '../styles/home.module.css';
 
 export default function Home() {
+  
   return (
     <Layout>
       <section className={styles.blackBlue}>
@@ -13,33 +12,7 @@ export default function Home() {
           <h1 className={styles.ofertText}>OFERTAS ESPECIAIS</h1>
 
           <div className={styles.slids}>
-
-            <a href="/products">
-              <MdKeyboardArrowLeft className={styles.arrow} color="#000000" size={75} />
-            </a>
-
-            <Link href='/products'>
-              <a>
-                <img src="/images/asma.png"/>
-              </a>
-            </Link>
-                    
-            <Link href="/products">
-              <a>
-                <img src="images/rivotril.png"/>
-              </a>
-            </Link>
-            
-            <Link href="/products">
-              <a>
-                <img src="images/suplemento.png"/>
-              </a>
-            </Link>
-
-            <a>
-              <MdKeyboardArrowRight className={styles.arrow} color="#000000" size={75} />
-            </a>
-                    
+            <Carousel />
           </div>
         </section>
       </section>
