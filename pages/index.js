@@ -56,13 +56,14 @@ export default function Home() {
               target="_blank"
               className={styles.formForm}
         >
-          <input name="Name" placeholder="seu nome" />
+          <input name="Name" placeholder="Seu Nome" />
           
           <input name="Email" placeholder="email" />
           
-          <textarea name="Mensagem" placeholder="sua mensagem"/>
+          <textarea name="Mensagem" placeholder="Sua Mensagem"/>
           
           <button type="submit" value="click" className={styles.btnVer}>Enviar</button>
+          <button  type="submit" value="click" className={styles.btnVer}>Enviar</button>
         </form>
       </section>
     </Layout>

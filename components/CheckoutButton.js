@@ -13,7 +13,7 @@ export default function CheckoutButton({ skuId }) {
         const stripe = await stripePromise;
 
         const { error } = await stripe.redirectToCheckout({
-            items: [{ sku: skuId, quantity: 1 }],
+            items: [{ sku: skuId, quantity: 3 }],
             successUrl: 'http://localhost:3000/success', 
             cancelUrl: 'http://localhost:3000/',
         });
@@ -24,9 +24,11 @@ export default function CheckoutButton({ skuId }) {
   };
 
   return (
+    <>
     <button className={styles.buy} onClick={handleClick}>
       <MdShoppingCart size={26} color="#ffffff" />
       Comprar
     </button>
+    </>
   );
 }

@@ -7,12 +7,14 @@ import { Stripe } from 'stripe';
 
 import Layout from '../components/layout';
 import GetBackButton from '../components/GetBackButton';
+import AddCartButton from '../components/AddCartButton';
 
 import parsePriceAsBRL from '../utils/parsePriceAsBRL';
 
 import styles from '../styles/utils.module.css';
 
 export default function Products({ skus  }) {
+
     return (
         <Layout>
             <Head>
@@ -42,6 +44,8 @@ export default function Products({ skus  }) {
                             com o melhor valor do mercado.
                             </p>
                         </div>
+
+                        <AddCartButton />
                         
                         <Link href='/products/[skuId]' as={`/products/${sku.id}`}>
                             <button className={styles.buy}>
@@ -52,9 +56,7 @@ export default function Products({ skus  }) {
                     </div>
 
                 )) }
-            </section>
-
-            
+            </section>            
         </Layout>
     )
 }

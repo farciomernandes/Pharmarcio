@@ -32,7 +32,7 @@ export default function Product({ sku }) {
                         { parsePriceAsBRL(Number(sku.price/100)) }
                     </span>
 
-                    <CheckoutButton skuId={sku.id} itemName={sku.attributes.name} />
+                    <CheckoutButton skuId={sku.id} />
                 </div>
             </div>
         </Layout>

@@ -118,6 +118,14 @@
     border: none;
     background: #60A3BC;
     height: 45px;
+    border-radius: 3px; width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #60A3BC;
+    height: 45px;
     border-radius: 3px;
     cursor: pointer;
     font-size: 18px;
@@ -134,7 +142,83 @@
     background-color: #0260E8;
 }
 
+.cartContainer {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    cursor: pointer;
+}
 
+.cartContainer span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 25px;
+    background-color: #60A3BC;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    text-align: center;
+    border-radius: 25px;
+}
+.MyCar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.titleMyCar{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.itemms{
+    margin-bottom: 1px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.itemms div input{
+    height: 7vh;
+    width: 5vw;
+    text-align: center;
+}
+.qtd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buyCar{
+    width: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px; width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #60A3BC;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+
+    transition: background 0.3s linear;
+}
+
+.totall{
+    font-size: 1.5em;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
 @media (max-width: 425px) {
     .redes {
        flex-direction: column;
@@ -149,5 +233,22 @@
         align-items: center;
         justify-content: center;
         padding: 0 40px;
+    }
+
+    .cartContainer {
+        top: 10px;
+        right: 50px;
+    }
+    
+    .cartContainer span {
+        color: #fff;
+        font-weight: bold;
+        width: 25px;
+        background-color: #60A3BC;
+        position: absolute;
+        left: 25px;
+        top: -10px;
+        text-align: center;
+        border-radius: 25px;
     }
 }
