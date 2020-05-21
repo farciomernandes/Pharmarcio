@@ -62,7 +62,6 @@ export default function Home() {
           
           <textarea name="Mensagem" placeholder="Sua Mensagem"/>
           
-          <button type="submit" value="click" className={styles.btnVer}>Enviar</button>
           <button  type="submit" value="click" className={styles.btnVer}>Enviar</button>
         </form>
       </section>
