@@ -118,6 +118,14 @@
     border: none;
     background: #60A3BC;
     height: 45px;
+    border-radius: 3px; width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #60A3BC;
+    height: 45px;
     border-radius: 3px;
     cursor: pointer;
     font-size: 18px;
@@ -153,8 +161,48 @@
     text-align: center;
     border-radius: 25px;
 }
-
-
+.MyCar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.tableTable{
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tableTitle{
+    background-color: #808080;
+    height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.tableImg{
+    height: 100px;
+}
+.tablePrice{
+    color: #11D100;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.tableName{
+    font-size: 1em;
+    font-weight: 700;
+}
+.tableInput{
+    width: 25%;
+}
+.tableInput input{
+    text-align: center;
+    font-size: 1.3em;
+    width: 20%;
+    height: 2em;
+}
+.buttonBuy2{
+    height: 2000px !important;
+    width: 10px;
+}
 @media (max-width: 425px) {
     .redes {
        flex-direction: column;
