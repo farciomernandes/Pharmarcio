@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.5.0",
-    "next": "^9.4.1",
+    "next": "^11.1.3",
     "pure-react-carousel": "^1.27.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
